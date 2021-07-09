@@ -1,1 +1,1 @@
-### React "add to list" test app
+React "add to list and search" test app
