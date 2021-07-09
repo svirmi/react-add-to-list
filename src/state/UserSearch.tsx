@@ -10,10 +10,13 @@ const users = [
 const UserSearch: React.FC = () => {
 
     const [name, setName] = useState('');
+    
+    const onClick = () => {}
 
     return <div>
         <h3>User Search</h3>
         <input value={name} onChange={e => setName(e.target.value)} />
+        <button>Find User</button>
     </div>
 }
 
