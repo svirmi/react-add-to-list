@@ -14,9 +14,7 @@ const GuestList: React.FC = () => {
         <h3>Guest List</h3>
 
         <ul>
-            {guests.map(
-                guest => <li key={guest}>{guest}</li>
-            )}
+            {guests.map((guest, index) => <li key={index}>{guest}</li>)}
         </ul>
 
         <input value={name} onChange={(e) => setName(e.target.value)} />
