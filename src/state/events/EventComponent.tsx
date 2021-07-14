@@ -4,9 +4,14 @@ export const EventComponent: React.FC = () => {
         console.log(event);
     }
 
+    const onDragstart = (event: React.DragEvent<HTMLDivElement>) => {
+        console.log(event)
+    }
+
     return (
         <div>
             <input onChange={onChange} />
+            <div draggable onDragStart={onDragstart}>Drag me!</div>
         </div>
     )
 }
